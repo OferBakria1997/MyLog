@@ -1,0 +1,64 @@
+GET http://localhost:5000/user/posts
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib29vb29mZXIiLCJfaWQiOiI1ZWIxODg1NWY5NGQzMDNkOTgwZDk3NGYiLCJpYXQiOjE1ODkxMTIwNTUsImV4cCI6MTU4OTExMjA4NX0.APxAta9biT1uBZOuPah2i2rSyEr6Z7Rk4DqMZ6xdt6Y
+
+
+###
+GET http://localhost:5000/user/
+
+
+
+###
+POST http://localhost:5001/user/signup
+Content-Type: application/json
+
+{
+  "username": "ooooofer",
+  "password": "ooooofer",
+  "firstname":"ooooofer",
+  "lastname":"ooooofer"
+}
+###
+POST http://localhost:5001/user/login
+Content-Type: application/json
+
+{
+  "username":"ooooosama",
+  "password":"ooooosama"
+} 
+###
+DELETE http://localhost:5001/user/logout
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib29vb29mZXIiLCJpYXQiOjE1ODg3NzgyNjN9.YdkmhUik-jNMIUisvMiTl2r8avES4W_w7CuuBXSX_L8"
+}
+
+###
+
+POST http://localhost:5001/user/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib29vb29mZXIiLCJpZCI6IjVlYjE4ODU1Zjk0ZDMwM2Q5ODBkOTc0ZiIsImlhdCI6MTU4OTA0NjMxNX0.pZmAuQ-AvpBsDksof2ZUTRPi2N0443fRjKV8kYUvuQg"
+}
+
+###
+POST  http://localhost:5000/exercise/add
+Content-Type: application/json
+
+{
+ "id":"ofer",
+ "description":"football",
+ "duration":60,
+ "date":"2020-05-05T14:12:58.568+00:00"
+}
+###
+GET  http://localhost:5000/exercise/5eb7f631af78fb56b056d39e
+Content-Type: application/json
+
+{
+ "id":"5eb7f631af78fb56b056d39e"
+}
+
+
+
